@@ -5,20 +5,21 @@
   }
 }
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: $tablet-min-width) {
     @content;
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: $desktop-min-width) {
     @content;
   }
 }
 
-@mixin pageGrid {
+@mixin page-grid {
   --columns: 2;
+
   display: grid;
 
   column-gap: 20px;
@@ -26,16 +27,18 @@
 
   @include onTablet {
     --columns: 6;
+
     column-gap: 30px;
   }
 
   @include onDesktop {
     --columns: 12;
+
     column-gap: 20px;
   }
 }
 
-@mixin verticalLine {
+@mixin vertical-line {
   content: "";
   position: absolute;
   height: 1px;
@@ -45,7 +48,7 @@
   transform: rotate(90deg) translateY(-4000%) translateX(-80%);
 }
 
-@mixin verticalText {
+@mixin vertical-text {
   display: block;
   grid-column: 1/2;
   align-self: flex-start;

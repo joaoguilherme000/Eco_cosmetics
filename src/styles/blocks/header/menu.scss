@@ -3,6 +3,7 @@
   background-color: $secondary-color;
   &__nav {
     margin-top: 45px;
+
     @include onTablet {
       margin-top: 100px;
     }

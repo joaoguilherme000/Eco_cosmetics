@@ -26,6 +26,7 @@
     background-image: url("../images/hero-screen-desktop.jpg");
     background-size: cover;
     background-position: center;
+
     @include hover(transform, scale(0.9));
   }
   &__title {
@@ -38,6 +39,7 @@
   }
   &__button {
     margin: 0 auto;
+
     @include onDesktop {
       margin: 0;
     }

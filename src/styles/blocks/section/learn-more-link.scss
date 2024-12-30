@@ -14,5 +14,6 @@
       grid-column: 2 / 5;
     }
   }
+
   @include hover(border-bottom, 1px solid $accent-color);
 }

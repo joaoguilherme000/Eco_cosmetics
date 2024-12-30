@@ -6,16 +6,20 @@
     grid-column: span 2;
     display: flex;
     flex-direction: column;
+
     @include onTablet {
       grid-column: span 3;
     }
+
     @include onDesktop {
       grid-column: 2 / 6;
     }
   }
   &__image-block {
     display: none;
+
     @include hover(transform, scale(0.9));
+
     @include onTablet {
       display: block;
       grid-column: span 3;
@@ -25,6 +29,7 @@
       background-position: left center;
       background-size: 100% auto;
     }
+
     @include onDesktop {
       grid-column: 7 / 13;
       background-image: url("../images/contact-us-picture-desktop.jpg");
@@ -32,18 +37,20 @@
     }
   }
   &__button {
-    font-family: "Avenir", sans-serif;
+    font-family: Avenir, sans-serif;
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.25em;
     font-weight: 600;
     margin: 0 auto;
+
     @include onTablet {
       margin: 0;
     }
   }
   &__sidebar--desktop {
     display: none;
+
     @include onDesktop {
       @include verticalText;
       &::after {

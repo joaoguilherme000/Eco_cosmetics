@@ -24,6 +24,7 @@
     font-weight: 500;
     color: $accent-color;
     border: 1px solid transparent;
+
     @include hover(border-bottom, 1px solid $accent-color);
   }
 }

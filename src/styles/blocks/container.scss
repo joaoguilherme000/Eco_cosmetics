@@ -1,9 +1,11 @@
 .container {
   padding-inline: $mobile-padding;
   overflow: hidden;
+
   @include onTablet {
     padding-inline: 27px;
   }
+
   @include onDesktop {
     max-width: 1280px;
     margin-inline: auto;

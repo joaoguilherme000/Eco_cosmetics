@@ -6,5 +6,6 @@
   background-image: url("../images/witch-of-the-mountain.png");
   background-size: cover;
   background-repeat: no-repeat;
+
   @include hover(transform, scale(1.3));
 }
